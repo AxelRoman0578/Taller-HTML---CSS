@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetPlus | Asistencia</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <aside class="barra-lateral">
+        <div class="marca"><span class="marca-icono">N</span><div><strong>NETPLUS</strong><small>ASISTENCIA</small></div></div>
+        <p class="titulo-menu">MENU PRINCIPAL</p>
+        <a class="enlace activo" href="#resumen"><span>▦</span> Resumen</a>
+        <a class="enlace" href="#colaboradores"><span>♙</span> Colaboradores</a>
+        <a class="enlace" href="#importaciones"><span>⇧</span> Importaciones</a>
+        <a class="enlace" href="#reportes"><span>▤</span> Reportes</a>
+        <a class="boton boton-secundario"
+   href="https://www.figma.com/design/a7QDg4OEHfnb5ch4bqEiie/NetPlus-%E2%80%94-Dashboard-de-N%C3%B3mina-%C2%B7-V1?node-id=0-1&amp;t=65mocphE4NKRXISh-1"
+   target="_blank"
+   rel="noopener noreferrer">
+        Ver diseño en Figma ↗
+    </a>
+        <div class="perfil"><div class="avatar">AR</div><div><strong>Ana Rodríguez</strong><small>Administradora</small></div></div>
+    </aside>
+
+    <main class="contenido-principal">
+        <header class="encabezado">
+            <div><p class="sobretitulo">NETPLUS / ASISTENCIA</p><h1>Resumen de asistencia</h1><p class="texto-suave">Vista general del periodo · actualizado hoy, 8:42 a. m.</p></div>
+            <a class="boton boton-principal" href="#importaciones">＋ Nueva importacion</a>
+        </header>
+
+        <section class="indicadores" id="resumen">
+            <article class="indicador"><div class="indicador-titulo">Colaboradores <span class="mini-icono violeta">♙</span></div><strong>128</strong><small class="positivo">+4 este mes</small></article>
+            <article class="indicador"><div class="indicador-titulo">Asistencias <span class="mini-icono azul">✓</span></div><strong>2,846</strong><small>92.4% del periodo</small></article>
+            <article class="indicador"><div class="indicador-titulo">Puntualidad <span class="mini-icono verde">◷</span></div><strong>92.4%</strong><small class="positivo">+2.1% vs. mes anterior</small></article>
+            <article class="indicador"><div class="indicador-titulo">Ausencias <span class="mini-icono naranja">!</span></div><strong>18</strong><small class="alerta">6 por revisar</small></article>
+        </section>
+
+        <section class="rejilla">
+            <article class="panel panel-grafico">
+                <div class="panel-cabecera"><div><h2>Tendencia de asistencia</h2><p class="texto-suave">Registros por dia · Octubre 2026</p></div><button class="boton boton-secundario">Este mes ▾</button></div>
+                <div class="grafico-falso" aria-label="Grafico decorativo de asistencia">
+                    <div class="linea-guia"><span>100%</span></div><div class="linea-guia"><span>75%</span></div><div class="linea-guia"><span>50%</span></div><div class="linea-guia"><span>25%</span></div>
+                    <div class="barras"><div class="barra" style="height:68%"><span>Lun</span></div><div class="barra" style="height:82%"><span>Mar</span></div><div class="barra" style="height:74%"><span>Mie</span></div><div class="barra" style="height:92%"><span>Jue</span></div><div class="barra" style="height:78%"><span>Vie</span></div><div class="barra barra-clara" style="height:55%"><span>Sab</span></div><div class="barra barra-clara" style="height:42%"><span>Dom</span></div></div>
+                </div>
+            </article>
+
+            <article class="panel novedades">
+                <div class="panel-cabecera"><div><h2>Novedades por revisar</h2><p class="texto-suave">Requieren atencion</p></div><span class="contador">3</span></div>
+                <div class="novedad"><div class="avatar avatar-rosa">LM</div><div class="novedad-texto"><strong>Luis Mendez</strong><small>Atraso · 38 min</small></div><span class="punto punto-naranja"></span></div>
+                <div class="novedad"><div class="avatar avatar-azul">CM</div><div class="novedad-texto"><strong>Carla Mora</strong><small>Sin salida registrada</small></div><span class="punto punto-azul"></span></div>
+                <div class="novedad"><div class="avatar avatar-verde">JP</div><div class="novedad-texto"><strong>Juan Perez</strong><small>Ausencia · 24 oct</small></div><span class="punto punto-rojo"></span></div>
+                <button class="boton boton-secundario boton-ancho">Ver novedades →</button>
+            </article>
+        </section>
+
+        <section class="panel tabla-panel" id="importaciones">
+            <div class="panel-cabecera"><div><h2>Importaciones recientes</h2><p class="texto-suave">Archivos procesados desde Z-BioTime</p></div><a class="boton boton-principal" href="#importaciones">＋ Importar archivo</a></div>
+            <div class="tabla-contenedor"><table><thead><tr><th>ARCHIVO</th><th>FECHA</th><th>REGISTROS</th><th>ESTADO</th></tr></thead><tbody><tr><td><span class="archivo-icono">XLS</span> Asistencia_Oct_2026.xlsx</td><td>28 oct 2026</td><td>3,082</td><td><span class="estado">● Procesado</span></td></tr><tr><td><span class="archivo-icono">XLS</span> Asistencia_Sep_2026.xlsx</td><td>30 sep 2026</td><td>2,914</td><td><span class="estado">● Procesado</span></td></tr></tbody></table></div>
+            <p class="nota-demo">Vista de demostracion: los datos y botones son de ejemplo.</p>
+        </section>
+
+        <section class="panel extra" id="colaboradores">
+            <div><h2>Colaboradores</h2><p class="texto-suave">Consulta general del personal registrado.</p></div>
+            <a href="#colaboradores" class="boton boton-secundario">Ver colaboradores →</a>
+        </section>
+        <section class="panel extra" id="reportes">
+            <div><h2>Reportes mensuales</h2><p class="texto-suave">Resumen visual para preparar la nomina.</p></div>
+            <a href="#reportes" class="boton boton-secundario">Ver reportes →</a>
+        </section>
+        <footer>© 2026 NetPlus · Panel de asistencia</footer>
+    </main>
+</body>
+</html>
